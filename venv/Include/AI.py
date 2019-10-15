@@ -1,15 +1,12 @@
-sum=0
-for i in range(1,41):
-    if i%3 == 0 or i%5==0:
-        print(i)
-        sum += i
+n = input("Enter a number: ")
+n=int(n)
+print(n,end='')
+while n > 1:
+    if n % 2 == 0:
+        n=n/2
+        print("-> ",n, end='')
 
-print("Suma do 41: ")
-print (sum)
 
-sum=0
-for i in range(1,1001):
-    if i%3 == 0 or i%5==0:
-        sum += i
-print("Suma do 1001: ")
-print (sum)
+    else:
+        n=3*n+1
+        print("-> ",n,end='')
