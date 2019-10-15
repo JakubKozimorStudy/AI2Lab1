@@ -1,12 +1,3 @@
-n = input("Enter a number: ")
-n=int(n)
-print(n,end='')
-while n > 1:
-    if n % 2 == 0:
-        n=n/2
-        print("-> ",n, end='')
-
-
-    else:
-        n=3*n+1
-        print("-> ",n,end='')
+temperature = input("Temperature F? ")
+temperature = float(temperature)
+print("It is ", round((temperature-32)/1.8,2) , "Degrees Celsius")
